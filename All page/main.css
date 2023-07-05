@@ -1,0 +1,223 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+input{
+    top: 57%;
+    left: 50%;
+    display:flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    width: 860px;
+    height: 20px;
+    padding: 27px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    background:rgba(255,255,255,0.5);
+     box-shadow: 0px 5px 25px rgba(14,21,37,0.8);
+}
+input:hover{
+    border: 2px solid cornflowerblue;
+}
+.ab{
+    color: black;
+    text-decoration: none;
+}
+.abb{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 8%;
+    right: 6.5%;
+}
+.ic{
+     color:cornflowerblue;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 1.5%;
+    right: 93%;
+}
+.ti{
+    color:rgb(131, 131, 131);
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    top: 0;
+    /* right: 84%;  */
+    left: 4%;
+    border: 2px solid rgb(185, 185, 185);
+    background-color: rgb(240, 248, 255);
+    border-radius: 8px;
+}
+.digital-clock{
+    top: 13%;
+    left: 74%;
+    position: relative;
+    color: #000;
+    background:rgba(255,255,255,0.5);
+    width: 250px;
+    height: 150px;
+    padding: 20px 45px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 5px 25px rgba(14,21,37,0.8);
+    border-radius: 10px;
+    flex-direction: column;
+}
+.weather{
+    border: 1px solid gray;
+    display: flex;
+    width: 450px;
+    height: 85px;
+    position: absolute;
+    top:83%;
+    left: 8%;
+    background:rgba(255,255,255,0.5);
+    box-shadow: 0px 5px 25px rgba(14,21,37,0.8);
+    border-radius: 10px;
+}
+.weather nav ul li{
+    list-style: none;
+}
+.weather,.aa,.a2{
+    margin-right: 20px;
+}
+.aa{
+    font-weight:700;
+}
+.a2{
+    margin-top: 10px;
+    font-weight:600;
+    color: red;
+}
+.time{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hours,.dots,.minutes{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 10px;
+    line-height: 125px;
+}
+.hours,.minutes{
+    font-size: 4.5em;
+    width: 75px;
+}
+.dots{
+    font-size: 3em;
+    color: #929292;
+}
+.hours{
+    color: #634dff;
+}
+.minutes{
+      color: #5fd4ff;
+}
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.period,.seconds{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.period{
+    transform: translateY(-20px);
+     color: #634dff;
+}
+.seconds{
+     transform: translateY(16px);
+      color: #634dff;
+}
+h2{
+    top: 87%;
+    right: 92.5%;
+    position: absolute;
+    width: 35px;
+    height:35px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    right: 7%;
+    background:rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: absolute;
+}
+.user{
+    top: 0%;
+    right: 1%;
+    list-style: none;
+    position: absolute;
+}
+ion-icon{
+    top: 82%;
+    right: 94%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 60%;
+}
+.image1 ion-icon{
+    display: flex;
+    position: absolute;
+    top: 54%;
+    left: 68%;
+    width: 40px;
+    height: 40px;
+    color: cornflowerblue;
+}
+.image2 ion-icon{
+      display: flex;
+    position: absolute;
+    top: 54%;
+    left: 72%;
+    
+      width: 40px;
+    height: 40px;
+     color: cornflowerblue;
+}
+.image3 ion-icon{
+    display: flex;
+    position: absolute;
+    top: 54%;
+    left: 75%;
+     color: cornflowerblue;
+    width: 40px;
+    height: 40px;
+}
+.continer{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image:url(Icon/imagemaain.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    display:flex;
+    text-align: center;
+    width: 100%;
+}

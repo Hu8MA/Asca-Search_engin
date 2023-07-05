@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Main Page</title>
+     <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="continer">
+        <div class="digital-clock">
+            <div class="time">
+                 <span class="hours">00</span>
+                 <span class="dots">:</span>
+                 <span class="minutes">00</span>
+                <div class="right-side">
+                <span class="period">PM</span>
+                <span class="seconds">00</span>
+                </div>
+            </div>
+
+                 <div class="days">
+
+
+            <span id="sun">SUN</span>&nbsp;<span id="mon">MON</span>&nbsp;<span id="tus">TUS</span>&nbsp;<span id="wed">WED</span>&nbsp;
+
+
+                <span id="thu">THU</span>&nbsp;<span id="fri">FRI</span>&nbsp;<span id="sat">SAT</span>
+
+
+            </div>
+
+
+            <div  id="date" style="margin-top: 7px;">
+
+
+            <span id="day"></span>
+
+                <span id="month"></span>
+
+                <span id="year"></span>
+            </div>
+        </div>
+            
+              <h1 class="ti">ASCA</h1>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+             var daysofweek=['sun','mon','tus','wed','thu','fri','sat'];
+             var month=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+            function clock(){
+                var today=new Date();
+                var hours=today.getHours();
+                var minutes=today.getMinutes();
+                var seconds=today.getSeconds();
+                let period="AM";
+                var daytoday=today.getDay();
+                var date=today.getDate();
+                var mon=today.getMonth();
+                var year=today.getFullYear();
+                //set the time pm/am
+                if(hours>=12){
+                    period="PM";
+                }
+                //set the time 12-hour clock format
+                hours = hours > 12 ? hours % 12:hours;
+                //add the 0 for the values lower than 10
+                if(hours < 10){
+                    hours = "0" + hours;
+                }
+                 if(minutes < 10){
+                    minutes = "0" + minutes;
+                }
+                 if(seconds < 10){
+                    seconds= "0" + hours;
+                }
+                document.querySelector(".hours").innerHTML=hours;
+                  document.querySelector(".minutes").innerHTML=minutes;
+                  document.querySelector(".period").innerHTML=period;
+                  document.querySelector(".seconds").innerHTML=seconds;
+                document.getElementById("day").innerHTML=date;
+                document.getElementById("month").innerHTML=month[mon];
+                document.getElementById("year").innerHTML=year;
+                document.getElementById(''+daysofweek[daytoday]+'').style.color='cornflowerblue';
+            }
+            var updateClock= setInterval(clock,1000);
+        </script>
+
+
+       <input type="text" name="" placeholder="Search ......" class="x">
+
+ 
+       <script>
+        
+        document.querySelector(".x").addEventListener("onbort",()=>{
+
+            open('file:\/\/\/H:/projectteam/All%20page/page1.html');
+        }
+        
+        )
+
+       </script>
+
+        <div class="image1">
+            <a href="#"> <ion-icon name="image-outline"></ion-icon></a>
+            </div>
+         <div class="image2">
+            <a href="#"> <ion-icon name="eye-outline"></ion-icon></a>
+            </div>
+        <div class="image3">
+             <a href="#"> <ion-icon name="mic-outline"></ion-icon></a>
+            </div>
+            
+            <a href="#"><img src="Icon/Login.jpg"></a>
+            <a href="signup.html" class="abb">+</a>
+            <ul class="user">
+            <li><a href="#" class="ab">Sukaina&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a href="#" class="ab">Suk34t@...</a></li>
+            </ul>
+        <div class="weather">
+   
+              <nav>
+            <ul>
+                <li class="aa">Humidity</li>
+                 <li class="a2">18 %</li>
+                  </ul>
+                  </nav>
+            <hr>
+              <nav>
+            <ul>
+              <li class="aa">Temperature</li>
+                 <li class="a2">27 C</li>
+                  </ul>
+                  </nav>
+            <hr>
+              <nav>
+            <ul>
+               <li class="aa">Wind Speed</li>
+                 <li class="a2">13 Km/h</li>
+                  </ul>
+                  </nav>
+           
+        </div>
+        <h2>IQ</h2>
+         <ion-icon name="cloudy-night-outline"></ion-icon>
+       </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
