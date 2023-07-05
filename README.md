@@ -2,7 +2,7 @@
 
 
 the description
-A search engine was developed (in a simple form) that uses public API technology to access modern and accurate data (web interfaces and the search client runs Javascript codes), the idea is to overcome the results displayed by the regular search engine, which are often multiple. Therefore, it was a solution in the treatment Limitations in existing search engines.
+It was a test project in software engineering, I was the team leader , we were three developers who worked together, where a search engine was developed (in the form of a simple form) that uses public API technology to access modern and accurate data (web interfaces and the search agent runs Javascript codes), the idea is Overcoming the results displayed by the regular search engine, which are often multiple. Therefore, it was a solution in addressing the limitations in the existing search engines.
 Development year: 2021-2022
 
 Challenges:
